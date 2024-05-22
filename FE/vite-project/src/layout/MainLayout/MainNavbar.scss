@@ -1,0 +1,53 @@
+header{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    .main_nav{
+        display: flex;
+        width: 80%;
+        justify-content: space-around;
+        ul{
+            width: 30%;
+            display: flex;
+            justify-content: space-around;
+            font-size: 20px;
+            color: black;
+        }
+        .dropdown{
+            display: none;
+        }
+    }
+}
+@media screen and (max-width: 1200px){
+    header{
+        .main_nav{
+            width: 100%;
+            ul{
+                width: 40%;
+            }
+        }
+    }
+}
+@media screen and (max-width: 1000px){
+    header{
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+        .main_nav{
+            display: flex;
+            width: 70%;
+            justify-content: space-between;
+            ul{
+                width: 90%;
+                display: none;
+                justify-content: space-around;
+                font-size: 20px;
+                color: black;
+            }
+            .dropdown{
+                display: flex;
+                font-size: 30px;
+            }
+        }
+    }
+}
